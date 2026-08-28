@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<CommunityApplications>
+  <Profile>
+    B+ Ark Server Controller provides an Unraid web interface for managing one or more ARK: Survival Ascended dedicated-server profiles. It uses one shared ARK installation while keeping each profile's configuration, saves, logs, maps, backups and settings separate.
+
+    Install the controller container, then open its WebUI to install ARK files and create server profiles. ASA servers remain stopped until you start them from the controller.
+
+    Support: https://discord.gg/6qDKS5Z5S5
+  </Profile>
+  <Icon>https://raw.githubusercontent.com/Boss898989/B-Plus-Ark-Server-Controller-CA/main/icon.svg</Icon>
+  <WebPage>https://github.com/Boss898989/B-Plus-Ark-Server-Controller</WebPage>
+  <Discord>https://discord.gg/6qDKS5Z5S5</Discord>
+</CommunityApplications>

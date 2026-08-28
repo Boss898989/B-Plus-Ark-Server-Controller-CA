@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>B+ Ark Server Controller</Name>
+  <Repository>ghcr.io/boss898989/bplus-ark-server-controller-unraid:1.3</Repository>
+  <Registry>https://github.com/Boss898989/B-Plus-Ark-Server-Controller/pkgs/container/bplus-ark-server-controller-unraid</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Icon>https://raw.githubusercontent.com/Boss898989/B-Plus-Ark-Server-Controller-CA/main/icon.svg</Icon>
+  <WebUI>http://[IP]:[PORT:8080]/</WebUI>
+  <Overview>Manage multiple ARK: Survival Ascended dedicated servers from one browser UI. The controller stores shared ARK files once and keeps each server profile's saves, configuration, maps, ports, logs and backups separate.</Overview>
+  <Support>https://discord.gg/6qDKS5Z5S5</Support>
+  <Project>https://github.com/Boss898989/B-Plus-Ark-Server-Controller</Project>
+  <TemplateURL>https://raw.githubusercontent.com/Boss898989/B-Plus-Ark-Server-Controller-CA/main/templates/bplus-ark-server-controller.xml</TemplateURL>
+  <ReadMe>https://raw.githubusercontent.com/Boss898989/B-Plus-Ark-Server-Controller-CA/main/README.md</ReadMe>
+  <Discord>https://discord.gg/6qDKS5Z5S5</Discord>
+  <Category>GameServers:</Category>
+  <ExtraSearchTerms>ark asa ark survival ascended dedicated server game server controller</ExtraSearchTerms>
+  <Requires>Docker must be enabled. The controller requires the Docker socket so it can create and manage the ARK server containers.</Requires>
+  <Changes>Initial Community Applications template for B+ Ark Server Controller 1.3.</Changes>
+  <Date>2026-08-28</Date>
+  <MinVer>6.12</MinVer>
+  <License>Proprietary</License>
+
+  <Config Name="Web UI Port" Target="8080" Default="8088" Mode="tcp" Description="Browser interface port." Type="Port" Display="always" Required="true" Mask="false">8088</Config>
+  <Config Name="Controller data" Target="/project" Default="/mnt/user/appdata/bplus-ark-controller" Mode="rw" Description="Persistent controller configuration, server registry and per-server settings." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/bplus-ark-controller</Config>
+  <Config Name="ARK server data" Target="/asa-appdata" Default="/mnt/user/appdata/bplus-asa-server" Mode="rw" Description="Persistent shared ARK installation, profiles, saves, mods, plugins, logs and backups." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/bplus-asa-server</Config>
+  <Config Name="Docker socket" Target="/var/run/docker.sock" Default="/var/run/docker.sock" Mode="rw" Description="Required so the controller can create and manage ASA server containers. Only use images you trust." Type="Path" Display="advanced" Required="true" Mask="false">/var/run/docker.sock</Config>
+  <Config Name="Host time" Target="/etc/localtime" Default="/etc/localtime" Mode="ro" Description="Uses the Unraid host timezone." Type="Path" Display="advanced" Required="false" Mask="false">/etc/localtime</Config>
+</Container>

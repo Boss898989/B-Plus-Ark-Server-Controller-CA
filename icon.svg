@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="B+ Ark Server Controller">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071a18"/>
+      <stop offset="1" stop-color="#102f29"/>
+    </linearGradient>
+    <linearGradient id="ark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f4d36a"/>
+      <stop offset=".5" stop-color="#42d9aa"/>
+      <stop offset="1" stop-color="#167dcc"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="88" fill="url(#bg)"/>
+  <path d="M256 55 96 422h79l28-69h106l28 69h79L256 55Zm0 115 59 143H197l59-143Z" fill="url(#ark)"/>
+  <path d="M115 359h76M321 359h76" fill="none" stroke="#f4d36a" stroke-width="19" stroke-linecap="round"/>
+  <text x="256" y="472" fill="#ecf8f5" text-anchor="middle" font-family="Arial, sans-serif" font-size="82" font-weight="700">B+</text>
+</svg>
