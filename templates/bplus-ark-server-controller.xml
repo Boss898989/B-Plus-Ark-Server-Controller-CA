@@ -6,7 +6,7 @@
   <Network>bridge</Network>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Icon>https://raw.githubusercontent.com/Boss898989/B-Plus-Ark-Server-Controller-CA/main/icon.svg</Icon>
+  <Icon>https://raw.githubusercontent.com/Boss898989/B-Plus-Ark-Server-Controller/main/ASA-Windows-Server/assets/bplus-ark-icon.png</Icon>
   <WebUI>http://[IP]:[PORT:8080]/</WebUI>
   <Overview>Manage multiple ARK: Survival Ascended dedicated servers from one browser UI. The controller stores shared ARK files once and keeps each server profile's saves, configuration, maps, ports, logs and backups separate.</Overview>
   <Support>https://discord.gg/6qDKS5Z5S5</Support>
